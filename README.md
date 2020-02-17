@@ -5,3 +5,7 @@ Laboratory work on computing complexes. Teacher - Bazhenov A.N.
 	
 	When solving problems in which it is necessary to take into account the geometric properties of sets, there is a need to quantify the similarity of the shapes of areas, curves and other objects.
 	There are different ways to estimate the similarity of sets. Among them is the Frechet distance introduced to estimate the similarity of curves.
+	
+2. **Section of body rotation**
+
+    Construct a rotation figure, a torus, as a discrete set of points in three-dimensional space. Construct its section with the plane x = H. Since one of the sections is well described by the Bernoulli lemniscata, construct a leminiscata and compare it with the corresponding section. By varying the lemniscata and torus parameters, optimize the Frechet distance between them.
