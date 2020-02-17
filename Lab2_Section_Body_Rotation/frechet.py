@@ -12,7 +12,6 @@ class Frechet:
 
         self.ca = np.full((self.p, self.q), -1.0)
 
-
     def frechet_distance(self):
         dist, i, j = self.c(self.p - 1, self.q - 1)
         self.plot(i, j, dist)
@@ -44,7 +43,6 @@ class Frechet:
 
         return self.ca[i][j], n_i, n_j
 
-
     def plot(self, i, j, d):
         plt.figure()
         plt.plot(self.P[:, 0], self.P[:, 1], color='blue')
@@ -54,6 +52,8 @@ class Frechet:
         plt.title('Frechet distance')
         plt.xlabel('X')
         plt.ylabel('Y')
+        plt.axis('equal')
         plt.grid(True)
-        plt.savefig("Frechet_dist%d.png"%i, dpi=500, format='png')
+
+        plt.savefig("Frechet_dist%d.png" % d, dpi=500, format='png')
         plt.show()
